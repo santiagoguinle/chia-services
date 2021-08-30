@@ -1,4 +1,4 @@
-# Chia and Madmax automatio
+# Chia and Madmax automation
 
 This set  of scripts are made for simplify my own chia setup.
 
@@ -16,18 +16,14 @@ You must have been joined to a pool in order to use madmax plotter
 
 ### Important Note
 
-The user on my linux user was named "usuario", if (probably) your user on linux has another name you should modify these scripts
+The user on my linux user was named "usuario", if (probably) your user on linux has another name you should modify these scripts and services files before install (or reinstalling services)
 
-## Configuration
-
-After clonning this repository on your user folder 
-
-## Installation
+## Installation and configuration
 
 Download this repository by executing:
 
 ```bash
-git clone http://github.com/.................
+git clone http://github.com/santiagoguinle/chia-services
 ```
 
 Go inside the folder and execute the install-all.sh file
@@ -37,7 +33,7 @@ cd ~/chia-services
 sh install-all.sh
 ```
 
-If you prefer to install only some of this services yo should go folder by folder and install each service like this:
+If you prefer to install only some of this services you should go folder by folder and install each service like this:
 
 Madmax Plotter Service
 ```bash
@@ -55,7 +51,7 @@ sh install.sh
 
 Once installed the services will run automatically
 
-if you want to see some output of the different service you could use
+if you want to see some output of the different service you could use:
 
 ```bash
 systemctl status chia-farmer.service
@@ -75,9 +71,7 @@ Please make sure to update tests as appropriate.
 
 ## Code Contributors
 
-This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
-<a href="https://github.com/santiagoguinle/chia-services/graphs/contributors"><img src="https://opencollective.com/chia-services/contributors.svg?width=890&button=false" /></a>
-
+This project exists thanks to all the people who contribute. 
 
 ## Author
 
@@ -87,4 +81,4 @@ This project exists thanks to all the people who contribute. [[Contribute](CONTR
 
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://github.com/santiagoguinle/chia-services/blob/main/LICENSE)

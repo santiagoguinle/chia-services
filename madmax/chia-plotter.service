@@ -6,7 +6,7 @@ Wants=network-online.target
 [Service]
 Type=forking
 ExecStartPre=/bin/sleep 10
-ExecStart=bash /home/usuario/chia-services/madmax/plot.sh
+ExecStart=bash ~/chia-services/madmax/plot.sh
 User=usuario
 RestartSec=15
 Restart=always

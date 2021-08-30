@@ -1,4 +1,4 @@
-cd /home/usuario/flax-blockchain/
+cd ~/flax-blockchain/
 . ./activate
 flax start farmer 
 

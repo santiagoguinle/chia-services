@@ -1,6 +1,4 @@
-cd /home/usuario/chaingreen-blockchain/
+cd ~/chaingreen-blockchain/
 . ./activate
 chaingreen start farmer 
-#cd chia-blockchain-gui
-#npm run electron &
 

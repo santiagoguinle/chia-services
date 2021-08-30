@@ -1,6 +1,6 @@
-cd /home/usuario/chia-blockchain/
+cd ~/chia-blockchain/
 . ./activate
 chia start farmer 
-#cd chia-blockchain-gui
-#npm run electron &
+
+
 
