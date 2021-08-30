@@ -6,7 +6,7 @@ Wants=network-online.target
 [Service]
 ExecStartPre=/bin/sleep 180
 Type=forking
-ExecStart=sh ~/chia-services/flax/farmer.sh
+ExecStart=sh /home/usuario/chia-services/flax/farmer.sh
 User=usuario
 
 [Install]

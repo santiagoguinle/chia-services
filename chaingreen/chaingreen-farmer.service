@@ -6,7 +6,7 @@ Wants=network-online.target
 [Service]
 ExecStartPre=/bin/sleep 120
 Type=forking
-ExecStart=sh ~/chia-services/chaingreen/farmer.sh
+ExecStart=sh /home/usuario/chia-services/chaingreen/farmer.sh
 User=usuario
 
 [Install]
