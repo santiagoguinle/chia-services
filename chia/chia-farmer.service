@@ -1,0 +1,13 @@
+[Unit]
+Description= Chia Farmer starter
+After=remote-fs.target network-online.target
+Wants=network-online.target
+
+[Service]
+Type=forking
+ExecStartPre=/bin/sleep 60
+ExecStart=sh /home/usuario/chia-services/chia/chia-farmer.sh
+User=usuario
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,13 @@
+[Unit]
+Description= Flax Farmer starter
+After=remote-fs.target network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStartPre=/bin/sleep 180
+Type=forking
+ExecStart=sh /home/usuario/chia-services/flax/farmer.sh
+User=usuario
+
+[Install]
+WantedBy=multi-user.target

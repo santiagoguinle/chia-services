@@ -1,0 +1,13 @@
+[Unit]
+Description= Chaingreen Farmer starter
+After=remote-fs.target network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStartPre=/bin/sleep 120
+Type=forking
+ExecStart=sh /home/usuario/chia-services/chaingreen/farmer.sh
+User=usuario
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,16 @@
+[Unit]
+Description= Chia Plotter Manager
+After=remote-fs.target network-online.target
+Wants=network-online.target
+
+[Service]
+Type=forking
+ExecStartPre=/bin/sleep 10
+ExecStart=bash /home/usuario/chia-services/madmax/plot.sh
+User=usuario
+RestartSec=15
+Restart=always
+TimeoutSec=infinity
+
+[Install]
+WantedBy=multi-user.target
