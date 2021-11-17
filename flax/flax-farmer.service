@@ -4,10 +4,11 @@ After=remote-fs.target network-online.target
 Wants=network-online.target
 
 [Service]
-ExecStartPre=/bin/sleep 180
+TimeoutStartSec=180
 Type=forking
 ExecStart=sh /home/usuario/chia-services/flax/farmer.sh
 User=usuario
+Restart=always  
 
 [Install]
 WantedBy=multi-user.target

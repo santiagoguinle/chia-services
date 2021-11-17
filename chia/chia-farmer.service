@@ -8,6 +8,7 @@ Type=forking
 ExecStartPre=/bin/sleep 60
 ExecStart=bash /home/usuario/chia-services/chia/farmer.sh
 User=usuario
+Restart=always  
 
 [Install]
 WantedBy=multi-user.target

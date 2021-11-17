@@ -20,33 +20,41 @@ The user on my linux user was named "usuario", if (probably) your user on linux 
 
 ## Installation and configuration
 
-Download this repository by executing:
+Download this repository by executing on your user folder:
 
 ```bash
 git clone http://github.com/santiagoguinle/chia-services
 ```
 
-Go inside the folder and execute the install-all.sh file
+### Installation of Chia Farmer Service :
 
-```bash
-cd ~/chia-services
-sh install-all.sh
-```
+Notes:
+- you should have chia-blockchain installed on your "~/" folder, and working normally with "chia start farmer"
+- if the name of your user is not "usuario" you should modify several of these files in order to this works
 
-If you prefer to install only some of this services you should go folder by folder and install each service like this:
 
-Madmax Plotter Service
-```bash
-cd ~/chia-services/madmax
-sh install.sh
-```
-
-Chia Farmer Service
+Then run:
 ```bash
 cd ~/chia-services/chia
 sh install.sh
 ```
 
+
+### Installation of Madmax Plotter Service
+
+First open and edit the file "~/chia-services/madmax/plotter.config" using as a guide the examples in the file.
+
+Notes:
+- vars temp1 and temp: can be the same folder, this folder will be erased before every plotting starts, so: BE CAREFULLY
+- dests: this ones should be the root folder of the mounted disks, if they aren't is not going to work the "free space checker"
+- rvar, fvar and cvar are called as the same letter on madmax binary
+- fvar and cvar must be completed with yours keys
+
+Then run:
+```bash
+cd ~/chia-services/madmax
+sh install.sh
+```
 ## Usage
 
 Once installed the services will run automatically
